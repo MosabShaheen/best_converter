@@ -1,5 +1,5 @@
 {
-  "name": "currency_converter",
+  "name": "best_converter",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -7,6 +7,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "tsc && node index.js"
+  },
+  "bin": {
+    "converter": "index.js"
   },
   "keywords": [],
   "author": "",

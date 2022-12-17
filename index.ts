@@ -1,3 +1,4 @@
+#! /usr/bin/env node
 import inquirer from "inquirer";
 
 let fuser: string
@@ -105,7 +106,7 @@ async function converter() {
     }
     else if(initialCurrency.initial_currency == "Rs Pakistani Rupees"){
         if(secondCurrency.second_currency == "$ Dollar"){
-            let drPkr = initialCurrency.initial_amount / 224.48
+            let drPkr = initialCurrency.initial_amount * 0.0044
             console.log(`Converted: $${drPkr}`)
             await playAgain()
         }
@@ -293,94 +294,94 @@ async function converter() {
     }
     else if(initialCurrency.initial_currency == "Turkish lira"){
         if(secondCurrency.second_currency == "$ Dollar"){
-            let drPkr = initialCurrency.initial_amount * 1.07
+            let drPkr = initialCurrency.initial_amount * 0.054
             console.log(`Converted: $${drPkr}`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Rs Pakistani Rupees"){
-            let drEu = initialCurrency.initial_amount * 239.24
+            let drEu = initialCurrency.initial_amount * 12.07
             console.log(`Converted: ${drEu} rs`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Indian Rupee"){
-            let drIn = initialCurrency.initial_amount * 88.19
+            let drIn = initialCurrency.initial_amount * 4.44
             console.log(`Converted: ${drIn} Indr`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Saudi Riyal"){
-            let drRi = initialCurrency.initial_amount * 4.01
+            let drRi = initialCurrency.initial_amount * 0.20
             console.log(`Converted: ${drRi} Riyal`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Euro"){
-            let drLi = initialCurrency.initial_amount * 19.87
+            let drLi = initialCurrency.initial_amount * 0.051
             console.log(`Converted: ${drLi} Lira`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Indonesian Rupiah"){
-            let drIr = initialCurrency.initial_amount * 16636.07
+            let drIr = initialCurrency.initial_amount * 836.83
             console.log(`Converted: ${drIr} Rupiah`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "United Arab Emirates Dirham"){
-            let drDi = initialCurrency.initial_amount * 3.92
+            let drDi = initialCurrency.initial_amount * 0.20
             console.log(`Converted: ${drDi} Dirham`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Chinese Yuan"){
-            let drYn = initialCurrency.initial_amount * 7.43
+            let drYn = initialCurrency.initial_amount * 0.37
             console.log(`Converted: ${drYn} Yuan`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Japanese Yen"){
-            let drYe = initialCurrency.initial_amount * 146.25
+            let drYe = initialCurrency.initial_amount * 7.33
             console.log(`Converted: ${drYe} Yen`)
             await playAgain()
         }
     }
     else if(initialCurrency.initial_currency == "Indonesian Rupiah"){
         if(secondCurrency.second_currency == "$ Dollar"){
-            let drPkr = initialCurrency.initial_amount * 0.012
+            let drPkr = initialCurrency.initial_amount * 0.000064
             console.log(`Converted: $${drPkr}`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Rs Pakistani Rupees"){
-            let drEu = initialCurrency.initial_amount * 2.71
+            let drEu = initialCurrency.initial_amount * 0.014
             console.log(`Converted: ${drEu} rs`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Euro"){
-            let drIn = initialCurrency.initial_amount * 0.011
+            let drIn = initialCurrency.initial_amount * 0.000060
             console.log(`Converted: ${drIn} euro`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Saudi Riyal"){
-            let drRi = initialCurrency.initial_amount * 0.045
+            let drRi = initialCurrency.initial_amount * 0.00024
             console.log(`Converted: ${drRi} Riyal`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Turkish lira"){
-            let drLi = initialCurrency.initial_amount * 0.23
+            let drLi = initialCurrency.initial_amount * 0.0012
             console.log(`Converted: ${drLi} Lira`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Indian Rupee"){
-            let drIr = initialCurrency.initial_amount * 188.49
-            console.log(`Converted: ${drIr} Rupiah`)
+            let drIr = initialCurrency.initial_amount * 0.0053
+            console.log(`Converted: ${drIr} Indr`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "United Arab Emirates Dirham"){
-            let drDi = initialCurrency.initial_amount * 0.044
+            let drDi = initialCurrency.initial_amount * 0.00024
             console.log(`Converted: ${drDi} Dirham`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Chinese Yuan"){
-            let drYn = initialCurrency.initial_amount * 0.084
+            let drYn = initialCurrency.initial_amount * 0.00045
             console.log(`Converted: ${drYn} Yuan`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Japanese Yen"){
-            let drYe = initialCurrency.initial_amount * 1.63
+            let drYe = initialCurrency.initial_amount * 0.0087
             console.log(`Converted: ${drYe} Yen`)
             await playAgain()
         }
@@ -392,137 +393,137 @@ async function converter() {
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Rs Pakistani Rupees"){
-            let drEu = initialCurrency.initial_amount * 59.68
+            let drEu = initialCurrency.initial_amount * 61.27
             console.log(`Converted: ${drEu} rs`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Euro"){
-            let drIn = initialCurrency.initial_amount * 0.25
+            let drIn = initialCurrency.initial_amount * 0.26
             console.log(`Converted: ${drIn} euro`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Indian Rupee"){
-            let drRi = initialCurrency.initial_amount * 22.00
+            let drRi = initialCurrency.initial_amount * 22.51
             console.log(`Converted: ${drRi} Indr`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Turkish lira"){
-            let drLi = initialCurrency.initial_amount * 4.96
+            let drLi = initialCurrency.initial_amount * 5.07
             console.log(`Converted: ${drLi} Lira`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Indonesian Rupiah"){
-            let drIr = initialCurrency.initial_amount * 4146.03
+            let drIr = initialCurrency.initial_amount * 4246.66
             console.log(`Converted: ${drIr} Rupiah`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Saudi Riyal"){
-            let drDi = initialCurrency.initial_amount * 0.98
-            console.log(`Converted: ${drDi} Dirham`)
+            let drDi = initialCurrency.initial_amount * 1.02
+            console.log(`Converted: ${drDi} Riyal`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Chinese Yuan"){
-            let drYn = initialCurrency.initial_amount * 1.85
+            let drYn = initialCurrency.initial_amount * 1.90
             console.log(`Converted: ${drYn} Yuan`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Japanese Yen"){
-            let drYe = initialCurrency.initial_amount * 36.51
+            let drYe = initialCurrency.initial_amount * 37.22
             console.log(`Converted: ${drYe} Yen`)
             await playAgain()
         }
     }
     else if(initialCurrency.initial_currency == "Chinese Yuan"){
         if(secondCurrency.second_currency == "$ Dollar"){
-            let drPkr = initialCurrency.initial_amount * 0.012
+            let drPkr = initialCurrency.initial_amount * 0.14
             console.log(`Converted: $${drPkr}`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Rs Pakistani Rupees"){
-            let drEu = initialCurrency.initial_amount * 2.71
+            let drEu = initialCurrency.initial_amount * 32.27
             console.log(`Converted: ${drEu} rs`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Euro"){
-            let drIn = initialCurrency.initial_amount * 0.011
+            let drIn = initialCurrency.initial_amount * 0.14
             console.log(`Converted: ${drIn} euro`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Saudi Riyal"){
-            let drRi = initialCurrency.initial_amount * 0.045
+            let drRi = initialCurrency.initial_amount * 0.54
             console.log(`Converted: ${drRi} Riyal`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Turkish lira"){
-            let drLi = initialCurrency.initial_amount * 0.23
+            let drLi = initialCurrency.initial_amount * 2.67
             console.log(`Converted: ${drLi} Lira`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Indian Rupee"){
-            let drIr = initialCurrency.initial_amount * 188.49
-            console.log(`Converted: ${drIr} Rupiah`)
+            let drIr = initialCurrency.initial_amount * 11.86
+            console.log(`Converted: ${drIr} Indr`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "United Arab Emirates Dirham"){
-            let drDi = initialCurrency.initial_amount * 0.044
+            let drDi = initialCurrency.initial_amount * 0.53
             console.log(`Converted: ${drDi} Dirham`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Indonesian Rupiah"){
-            let drYn = initialCurrency.initial_amount * 0.084
-            console.log(`Converted: ${drYn} Yuan`)
+            let drYn = initialCurrency.initial_amount * 2236.85
+            console.log(`Converted: ${drYn} Rupiah`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Japanese Yen"){
-            let drYe = initialCurrency.initial_amount * 1.63
+            let drYe = initialCurrency.initial_amount * 19.60
             console.log(`Converted: ${drYe} Yen`)
             await playAgain()
         }
     }
     else if(initialCurrency.initial_currency == "Japanese Yen"){
         if(secondCurrency.second_currency == "$ Dollar"){
-            let drPkr = initialCurrency.initial_amount * 0.27
+            let drPkr = initialCurrency.initial_amount * 0.0073
             console.log(`Converted: $${drPkr}`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Rs Pakistani Rupees"){
-            let drEu = initialCurrency.initial_amount * 59.68
+            let drEu = initialCurrency.initial_amount * 1.65
             console.log(`Converted: ${drEu} rs`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Euro"){
-            let drIn = initialCurrency.initial_amount * 0.25
+            let drIn = initialCurrency.initial_amount * 0.0069
             console.log(`Converted: ${drIn} euro`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Indian Rupee"){
-            let drRi = initialCurrency.initial_amount * 22.00
+            let drRi = initialCurrency.initial_amount * 0.60
             console.log(`Converted: ${drRi} Indr`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Turkish lira"){
-            let drLi = initialCurrency.initial_amount * 4.96
+            let drLi = initialCurrency.initial_amount * 0.14
             console.log(`Converted: ${drLi} Lira`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Indonesian Rupiah"){
-            let drIr = initialCurrency.initial_amount * 4146.03
+            let drIr = initialCurrency.initial_amount * 114.10
             console.log(`Converted: ${drIr} Rupiah`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Saudi Riyal"){
-            let drDi = initialCurrency.initial_amount * 0.98
-            console.log(`Converted: ${drDi} Dirham`)
+            let drDi = initialCurrency.initial_amount * 0.028
+            console.log(`Converted: ${drDi} Riyal`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "Chinese Yuan"){
-            let drYn = initialCurrency.initial_amount * 1.85
+            let drYn = initialCurrency.initial_amount * 0.051
             console.log(`Converted: ${drYn} Yuan`)
             await playAgain()
         }
         else if(secondCurrency.second_currency == "United Arab Emirates Dirham"){
-            let drYe = initialCurrency.initial_amount * 36.51
-            console.log(`Converted: ${drYe} Yen`)
+            let drYe = initialCurrency.initial_amount * 0.027
+            console.log(`Converted: ${drYe} Dirham`)
             await playAgain()
         }
     }
